@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="510.0" prefWidth="635.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="NtateMafereka.HomeController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#d0ddd7" height="224.0" layoutX="230.0" layoutY="234.0" stroke="#7c7070" strokeType="INSIDE" strokeWidth="3.0" width="273.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#25b974" height="516.0" layoutX="-1.0" stroke="#25b974" strokeType="INSIDE" width="163.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#25b974" height="53.0" layoutX="-1.0" stroke="#f8fffc" strokeType="INSIDE" width="635.0" />
+      <ImageView fitHeight="102.0" fitWidth="150.0" layoutX="5.0" layoutY="230.0">
+         <image>
+            <Image url="@damn.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="5.0" layoutY="8.0" prefHeight="36.0" prefWidth="302.0" text="SEKHUTLONG BANKING SERVICES">
+         <font>
+            <Font name="Bernard MT Condensed" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="247.0" layoutY="12.0" text="BALANCES: " textFill="#0d0d0d">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="121.0" fitWidth="121.0" layoutX="308.0" layoutY="72.0">
+         <image>
+            <Image url="@user.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="285.0" layoutY="199.0" text="Dr.Luka Mafereka">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="5.0" layoutY="61.0" mnemonicParsing="false" onAction="#profile" prefHeight="27.0" prefWidth="150.0" text="Profile" />
+      <Button layoutX="5.0" layoutY="92.0" mnemonicParsing="false" onAction="#sendMoney" prefHeight="27.0" prefWidth="150.0" text="Send Money" />
+      <Button layoutX="6.0" layoutY="124.0" mnemonicParsing="false" onAction="#crypto" prefHeight="27.0" prefWidth="150.0" text="Convert to  Crypto" />
+      <Button layoutX="5.0" layoutY="158.0" mnemonicParsing="false" onAction="#pay" prefHeight="27.0" prefWidth="150.0" text="Pay Fees" />
+      <Button layoutX="6.0" layoutY="193.0" mnemonicParsing="false" onAction="#ewallet" prefHeight="27.0" prefWidth="150.0" text="Convert to E-wallet" />
+      <Button layoutX="5.0" layoutY="338.0" mnemonicParsing="false" onAction="#exitProgram" prefHeight="35.0" prefWidth="150.0" text="Log Out" />
+      <Label fx:id="balance" layoutX="358.0" layoutY="15.0" text="M3000.00">
+         <font>
+            <Font name="System Italic" size="15.0" />
+         </font>
+      </Label>
+      <ListView layoutX="242.0" layoutY="244.0" prefHeight="204.0" prefWidth="250.0" />
+      <Label layoutX="257.0" layoutY="264.0" text="Savings Account">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="257.0" layoutY="296.0" text="Current Account">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="257.0" layoutY="329.0" text="Crypto Accounts">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="261.0" layoutY="360.0" text="MyWallet">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="savings" layoutX="415.0" layoutY="266.0" text="M600,98" />
+      <Label fx:id="currentAccounts" layoutX="417.0" layoutY="297.0" text="M98.45" />
+      <Label fx:id="Bitcoin" layoutX="417.0" layoutY="329.0" text="0.003BTC" />
+      <Label fx:id="netflix" layoutX="417.0" layoutY="364.0" text="M200.56" />
+   </children>
+</AnchorPane>
